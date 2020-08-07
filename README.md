@@ -6,6 +6,10 @@ A fake emulator for a fake CPU created in my fake brain
 
 FauxCPU is a fake 8-bit little-endian CPU loosely based on the 6502 but not really. I decided to build this as a learning experiment.... plus I got bored and needed something fun to do. 
 
+It features 3 8-bit general purpose registers, an 8-bit stack pointer, and 16 whole bits of addressable memory. 
+
+The display output supports 4-bit color (CGA palette), currently at a 64x64 resolution but will be increased to 128x128 in the future. Video memory is directly mapped to system memory. 
+
 ## Registers
 
 A, B – 8 Bit - Both numerical registers used for common mathematical operations
