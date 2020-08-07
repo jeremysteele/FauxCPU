@@ -8,6 +8,8 @@ FauxCPU is a fake 8-bit little-endian CPU loosely based on the 6502 but not real
 
 It features 3 8-bit general purpose registers, an 8-bit stack pointer, and 16 whole bits of addressable memory. 
 
+The system itself is set at a nice smooth 1 MIPS. Video output is still a work in progress, but is intended to run as fast as possible for now. Eventually it'll be moved to OpenGL or something a bit more efficient than GDI. 
+
 The display output supports 4-bit color (CGA palette), currently at a 64x64 resolution but will be increased to 128x128 in the future. Video memory is directly mapped to system memory. 
 
 ## Registers
