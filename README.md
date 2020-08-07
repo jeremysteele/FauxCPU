@@ -4,7 +4,7 @@ A fake emulator for a fake CPU created in my fake brain
 
 ## What is this thing?
 
-FauxCPU is a fake 8-bit little-endian CPU loosely based on the 6502 but not really. I decided to build this as a learning experiment.... plus I got bored and needed something fun to do. 
+FauxCPU is a completely fabricated 8-bit little-endian CPU loosely based on the 6502 but not really. I decided to build this as a learning experiment.... plus I got bored and needed something fun to do. 
 
 It features 3 8-bit general purpose registers, an 8-bit stack pointer, and 16 whole bits of addressable memory. 
 
@@ -42,9 +42,9 @@ Subject to change.
 |0x00  | Y    | 1  | NOP  | No Operation |
 |0x01  | Y    | 1  | ADD  | Add A, B, Store in X |
 |0x02  | Y    | 1  | SUB  | Sub B from A, store in X |
-|0x03  | Y    | 1  | MLT  | Mult A and B, store in X |
-|0x04  | Y    | 1  | DIV  | Divide B into A, store in X |
-|0x05  | Y    | 1  | DIR  | Divide A into B, store remainder in X |
+|0x03  | N    | 1  | MLT  | Mult A and B, store in X |
+|0x04  | N    | 1  | DIV  | Divide B into A, store in X |
+|0x05  | N    | 1  | DIR  | Divide A into B, store remainder in X |
 |0x06  | Y    | 1  | TAB  | Transfer A to B |
 |0x07  | Y    | 1  | TBA  | Transfer B to A |
 |0x08  | Y    | 1  | TAX  | Transfer A to X |
